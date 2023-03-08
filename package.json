@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
+    "sass": "sass --update assets/scss:assets/css",
+    "sass:watch": "sass --no-source-map --watch assets/scss:assets/css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -13,11 +15,18 @@
   "author": "CodingNinjas",
   "license": "ISC",
   "dependencies": {
+    "connect-mongo": "^4.6.0",
     "cookie-parser": "^1.4.4",
     "ejs": "^3.1.8",
     "express": "^4.18.2",
     "express-ejs-layouts": "^2.5.0",
+    "express-session": "^1.17.3",
     "mongoose": "^6.10.1",
-    "nodemon": "^2.0.21"
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.21",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0",
+    "saas": "^1.0.0",
+    "sass": "^1.58.3"
   }
 }

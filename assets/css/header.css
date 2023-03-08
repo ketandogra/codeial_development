@@ -1,0 +1,33 @@
+header {
+  background-color: rgb(38, 133, 228);
+  display: flex;
+  height: auto;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+}
+header #site-title-div {
+  font-size: 2rem;
+  font-weight: 600;
+}
+header #site-title-div a {
+  text-decoration: none;
+  color: white;
+}
+header #site-title-div p {
+  margin: 5px 0 5px 15px;
+}
+header #header-link-div ul {
+  list-style: none;
+  padding: 0;
+  margin: 12px 15px 5px 0;
+}
+header #header-link-div ul li {
+  display: inline-block;
+  margin: 0 7px;
+}
+header #header-link-div ul li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: white;
+}

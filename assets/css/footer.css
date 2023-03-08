@@ -1,0 +1,22 @@
+footer {
+  margin-top: auto;
+  display: flex;
+  background-color: rgb(112, 109, 109);
+  color: white;
+  height: auto;
+  font-size: 1rem;
+}
+footer #footer-div-1 {
+  margin: 10px 10px 10px 15px;
+}
+footer #footer-div-1 p {
+  margin: 0;
+}
+footer #footer-div-2 {
+  margin: 10px 0 10px 15px;
+  display: flex;
+  flex-direction: column;
+}
+footer #footer-div-2 p {
+  margin: 0;
+}

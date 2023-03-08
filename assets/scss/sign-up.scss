@@ -1,0 +1,48 @@
+body {
+  text-align: center;
+  font-size: 1.2rem;
+  #signup-page {
+    min-width: 400px;
+    width: 30vw;
+    padding-bottom: 30px;
+    margin: auto;
+    height: auto;
+    border-radius: 5px;
+    border: 1px none lightgrey;
+    background-color: lightgrey;
+    box-shadow: 0 0 2px 1px lightgrey;
+
+    #signup-div {
+      input[type="email"],
+      input[type="password"],
+      input[type="text"] {
+        width: 70%;
+        display: block;
+        border: 1px none rgb(160, 148, 148);
+        box-shadow: 0 0 3px 2px lightgrey;
+      }
+      input {
+        height: 40px;
+        font-size: 1rem;
+        border-radius: 5px;
+        position: relative;
+        margin: 35px auto 0;
+      }
+      input:focus {
+        outline: none;
+        font-size: 1rem;
+      }
+      input[type="submit"] {
+        display: block;
+        min-width: 100px;
+        width: 25%;
+        border: 1px none;
+        background-color: rgb(38, 133, 228);
+        color: white;
+      }
+      input[type="submit"]:hover {
+        background-color: rgb(5, 90, 202);
+      }
+    }
+  }
+}
