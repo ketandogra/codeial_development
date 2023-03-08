@@ -10,7 +10,7 @@ const postSchema = new mongoose.Schema(
     //link post to the signed in user by object ID
     user: {
       type: mongoose.Schema.Types.ObjectId,
-      ref: "User", //refer object ID to user schema
+      ref: "User", //refer object ID of user schema
     },
   },
   {
