@@ -14,6 +14,7 @@ module.exports.home = function (req, res) {
   //populate the user object(document) from users collection for the each post
   Post.find({})
     .populate("user")
+    .populate({ path: "comments", populate: { path: "user" } })
     .exec(function (err, posts) {
       return res.render("home", {
         title: "Codeial | Home",

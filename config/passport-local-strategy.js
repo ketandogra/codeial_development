@@ -18,7 +18,7 @@ passport.use(
           return done(err);
         }
 
-        if (!user || user.password != password) {
+        if (!user.email || user.password != password) {
           // Authenticate has not been done
           console.log("Invalid Username/Password");
           done(null, false);
