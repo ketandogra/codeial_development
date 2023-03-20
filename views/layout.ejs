@@ -4,6 +4,17 @@
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- noty js flash message cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.css"
+    />
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
       rel="stylesheet"
@@ -16,7 +27,42 @@
   </head>
 
   <body>
-    <%- include('_header'); %> <%- body %> <%- include('_footer'); %> <%- script
-    %>
+    <div id="page-container">
+      <%- include('_header'); -%>
+
+      <main id="layout-main"><%- body %></main>
+      
+        <%- include('_footer'); -%>
+        <%- script %></main>
+      
+    </div>
+    <script>
+      <% if (flash.success && flash.success.length > 0) {%>
+
+        new Noty({
+
+          theme : 'relax',
+          text: '<%= flash.success%>',
+          type: 'success',
+          layout:'topRight',
+          timeout:1000
+
+        }).show();
+
+      <%}%>
+      <% if (flash.error && flash.error.length > 0) {%>
+
+      new Noty({
+
+        theme : 'relax',
+        text: '<%= flash.error%>',
+        type: 'error',
+        layout:'topRight',
+        timeout:1000
+
+      }).show();
+
+      <%}%>
+    </script>
   </body>
 </html>

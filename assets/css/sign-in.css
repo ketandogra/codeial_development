@@ -1,6 +1,7 @@
 body {
   text-align: center;
   font-size: 1.2rem;
+  font-family: poppins;
 }
 body #signin-page {
   min-width: 400px;
@@ -13,8 +14,8 @@ body #signin-page {
   background-color: lightgrey;
   box-shadow: 0 0 2px 1px lightgrey;
 }
-body #signin-page #sign-in-div input[type=email],
-body #signin-page #sign-in-div input[type=password] {
+body #signin-page #sign-in-div input[type="email"],
+body #signin-page #sign-in-div input[type="password"] {
   width: 70%;
   display: block;
   border: 1px none rgb(160, 148, 148);
@@ -32,13 +33,13 @@ body #signin-page #sign-in-div input:focus {
   outline: none;
   font-size: 1rem;
 }
-body #signin-page #sign-in-div input[type=submit] {
+body #signin-page #sign-in-div input[type="submit"] {
   min-width: 100px;
   width: 25%;
   border: 1px none;
   background-color: rgb(38, 133, 228);
   color: white;
 }
-body #signin-page #sign-in-div input[type=submit]:hover {
+body #signin-page #sign-in-div input[type="submit"]:hover {
   background-color: rgb(5, 90, 202);
 }
