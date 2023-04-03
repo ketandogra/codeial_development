@@ -14,6 +14,7 @@
   </p>
   <div class="post-comments">
     <% if (locals.user){%>
+    <!-- let's give an id to the new comment form, we'll also need to make the same changes in home_posts.js where we're adding a post to the page -->
     <form action="/comments/create" method="POST">
       <input
         type="text"
